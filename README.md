@@ -1,6 +1,9 @@
 MariaDB Query Statement Sniffer
 ===============================
 
+MQS is a simple tool whose purpose is to Sniff MariaDB/MySQL queries in order to push them to a lua script, or simply
+print them on stdout. A Proxy was overkill, I wanted something lightweight to understand queries being made. 
+
 Please read doc/mqs.1 for the up to date documentation on program and options.
 
 Dependencies
