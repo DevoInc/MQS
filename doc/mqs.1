@@ -1,0 +1,41 @@
+.TH MQS 1 2019-08-22
+.SH NAME
+mqs \- MariaDB/MySQL Queries Sniffer
+.SH SYNOPSIS
+.B mqs
+[\fI\,OPTION\/\fR]
+.SH DESCRIPTION
+mqs is a program which enable listening on default 3306 MariaDB/MySQL port for requests and print them on stdout or run a lua program for each new one.
+.SH OPTIONS
+.TS
+allbox;
+lb lb lb
+l l c.
+Option	Description	Defaults
+T{
+.BR -d
+T}	Daemonize the process	
+T{
+.BR -f	BPF
+T}	Executes the BPF filter to capture	"dst port 3306"
+T{
+.BR -h
+T}	Shows the help	
+T{
+.BR -i	INTERFACE
+T}	Sniffs in the provided INTERFACE	any
+T{
+.BR -q	
+T}	Quiet mode, do not print anything
+T{
+.BR -r	FILE
+T}	Read a pcap FILE
+T{
+.BR -s	FILE
+T}	Executes the lua FILE	
+.TE
+
+.SH AUTHORS
+mqs is brought to you by
+.B Sebastien Tricaud
+<sebastien.tricaud@devo.com>

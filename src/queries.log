@@ -1,0 +1,14 @@
+[2019-08-30 01:24:42] select @@version_comment limit 1
+[2019-08-30 01:24:42] SELECT DATABASE()
+[2019-08-30 01:24:42] show databases
+[2019-08-30 01:24:42] show tables
+[2019-08-30 01:24:42] create table foo (id BIGINT( 10 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, animal VARCHAR(64) NOT NULL, name VARCHAR(64) NULL DEFAULT NULL) ENGINE = MYISAM
+[2019-08-30 01:24:42] insert into foo (animal, name) values ("dog", "Goofy")
+[2019-08-30 01:24:42] insert into foo (animal, name) values ("cat", "Garfield")
+[2019-08-30 01:24:42] select * from foo
+[2019-08-30 01:24:42] delete from foo where name like '%oo%'
+[2019-08-30 01:24:42] delete from foo where id = 1
+[2019-08-30 01:24:42] select count(*) from foo
+[2019-08-30 01:24:42] select * from foo
+[2019-08-30 01:24:42] delete from foo
+[2019-08-30 01:24:42] drop table foo
